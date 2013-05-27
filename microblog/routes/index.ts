@@ -1,10 +1,6 @@
 /// <reference path="../d/node/node.d.ts" />
 /// <reference path="../d/express/express.d.ts" />
-/// <reference path="../db.ts" />
 
-/*
- * GET home page.
- */
 import express = module('express');
 import crypto = module('crypto');
 import db = module('../db');
@@ -130,9 +126,7 @@ export function user(req: ExpressServerRequest, res: ExpressServerResponse): voi
     })
 }
 
-/**
-*   ∑¢±Ì È∆¿
-*/
+
 export function post(req: ExpressServerRequest, res: ExpressServerResponse): void
 {
     var currentUser: db.User = req.session.user;
@@ -146,10 +140,6 @@ export function post(req: ExpressServerRequest, res: ExpressServerResponse): voi
          }
     })
 }
-
-
-
-
 
 export function hello(req: ExpressServerRequest, res: ExpressServerResponse): void
 {

@@ -1,11 +1,6 @@
 /// <reference path="./d/node/node.d.ts" />
 /// <reference path="./d/express/express.d.ts" />
 
-
-/**
- * Module dependencies.
- */
-
 import express = module('express');
 import routes = module("./routes/index");
 import user = module('./routes/user')

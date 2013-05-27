@@ -2,8 +2,6 @@
 import mongodb = module("mongodb");
 import  util = module('util');
 
-
-
 var server = new mongodb.Server("localhost", 27017, {auto_reconnect:true});
 var db: mongodb.Db = new mongodb.Db("cnriabook", server);
 db.open(function (err: Error, db: mongodb.Db) {
