@@ -1,0 +1,18 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      <%= title %>
+    </title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <ul>
+      <% items.forEach(function(item){ %> 
+        <% include listitem %> 
+        <%= "中文" %>
+      <% }) %>
+
+    </ul>
+  </body>
+</html>

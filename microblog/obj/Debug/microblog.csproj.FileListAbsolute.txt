@@ -1,0 +1,5 @@
+E:\nodeProgram\microblog\microblog\obj\Debug\microblog.csprojResolveAssemblyReference.cache
+E:\nodeProgram\microblog\microblog\obj\Debug\microblog.dll
+E:\nodeProgram\microblog\microblog\obj\Debug\microblog.pdb
+E:\nodeProgram\microblog\microblog\bin\microblog.dll
+E:\nodeProgram\microblog\microblog\bin\microblog.pdb

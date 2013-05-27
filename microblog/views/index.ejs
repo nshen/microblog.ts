@@ -1,0 +1,16 @@
+<% include header %>
+      <!-- Main hero unit for a primary marketing message or call to action -->
+      <div class="hero-unit">
+       <h1>欢迎来到RIABook.cn   <small>   I think you'll like it.</small></h1>
+        <p>
+		    <% if(user ){ %>
+			<p>	<%= user.name %>,您已经登录！</p>
+				<% include say %>
+			<% }else{%>
+				<a href="/login" class="btn btn-primary btn-large">登录</a>
+				<a href="/reg" class="btn btn-large">立即注册</a>
+		    <% } %>	
+		</p>
+		</div>
+		<% include posts %>
+<% include footer %>
