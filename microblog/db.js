@@ -1,9 +1,11 @@
 var mongodb = require("mongodb")
-var util = require('util')
+
 var server = new mongodb.Server("localhost", 27017, {
     auto_reconnect: true
 });
-var db = new mongodb.Db("cnriabook", server);
+var db = new mongodb.Db("cnriabook", server, {
+    w: 1
+});
 db.open(function (err, db) {
     if(err) {
         console.error("db.open error", err.message);
@@ -54,8 +56,6 @@ function getUser(name, callback) {
                     console.error("#3#", err.toString());
                     callback(null);
                 }
-                console.log(typeof doc);
-                console.log(util.inspect(doc, false, 5));
                 callback(doc);
             });
         });

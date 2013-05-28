@@ -38,13 +38,6 @@
       <DependentUpon>Language.ts</DependentUpon>
     </Content>
     <TypeScriptCompile Include="db.ts" />
-    <Content Include="routes\user.js">
-      <DependentUpon>user.ts</DependentUpon>
-    </Content>
-    <Content Include="routes\user.min.js">
-      <DependentUpon>user.ts</DependentUpon>
-    </Content>
-    <TypeScriptCompile Include="routes\user.ts" />
     <TypeScriptCompile Include="routes\index.ts" />
     <Content Include="routes\index.js">
       <DependentUpon>index.ts</DependentUpon>
@@ -67,11 +60,6 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="routes\user.js.map">
-      <DependentUpon>user.ts</DependentUpon>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="views\index.ejs" />
   </ItemGroup>
   <ItemGroup>
@@ -79,9 +67,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="views\listitem.ejs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="views\helper.ejs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="views\reg.ejs" />
@@ -103,6 +88,21 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="views\login.ejs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="views\user.ejs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="views\say.ejs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="views\posts.ejs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="views\header.ejs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="views\footer.ejs" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

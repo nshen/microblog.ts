@@ -3,7 +3,7 @@ import mongodb = module("mongodb");
 import  util = module('util');
 
 var server = new mongodb.Server("localhost", 27017, {auto_reconnect:true});
-var db: mongodb.Db = new mongodb.Db("cnriabook", server);
+var db: mongodb.Db = new mongodb.Db("cnriabook", server, {w:1});
 db.open(function (err: Error, db: mongodb.Db) {
     if (err) {
         console.error("db.open error", err.message);
@@ -68,9 +68,7 @@ export function getUser(name: string, callback: (user: User) => void ): void
                    // db.close();
                     callback(null);
                 }
-                console.log(typeof doc)
 
-                console.log(util.inspect(doc, false, 5));
                // db.close();
                 callback(doc);
             });

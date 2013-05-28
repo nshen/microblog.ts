@@ -17,6 +17,7 @@ function index(req, res) {
 exports.index = index;
 ;
 function reg(req, res) {
+    throw new Error('An error for test purposes.');
     res.render("reg", {
         title: l.register,
         user: req.session.user

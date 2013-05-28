@@ -25,6 +25,7 @@ export function index(req:ExpressServerRequest, res:ExpressServerResponse): void
 
 export function reg(req:any , res:any): void
 {
+    throw new Error('An error for test purposes.');
     res.render("reg", {
         title: l.register,
         user: req.session.user
